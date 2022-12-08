@@ -1,17 +1,161 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tehuacán, Puebla</ion-title>
+    <img class="renezz" slot="end" src="../../assets/imagenes/PerfilRenezz.jpg" alt="">
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+   
   </ion-header>
+  <ion-slides [options]="slideOpts">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-slide *ngFor="let picture of picture">
+      <ion-card color="secondary">
+        <ion-card-content>
+        <img [src]="picture.url">
+        <ion-label>{{picture.name}}</ion-label>
+      </ion-card-content>
+      </ion-card>
+      
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card color="primary">
+    <img src="../../assets/imagenes_grandes/Pitbull.png"/>
+    <ion-card-header>
+      <ion-card-title>Pitbull</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-button color="secondary">Buy Now</ion-button></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-card>
+
+  <ion-card color="primary">
+    <img src="../../assets/imagenes_grandes/Gato.png"/>
+    <ion-card-header>
+      <ion-card-title>MIAW</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-button color="secondary">Buy Me</ion-button></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-card>
+
+  <ion-card color="primary">
+    <img src="../../assets/imagenes_grandes/Rabiit.png"/>
+    <ion-card-header>
+      <ion-card-title>Rabbit</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+      
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-button color="secondary">Buy Me</ion-button></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-card>
+
+  <ion-card color="primary">
+    <img src="../../assets/imagenes_grandes/Chihuahua.png"/>
+    <ion-card-header>
+      <ion-card-title>Tzuru</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+      
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-button color="secondary">Buy Me</ion-button></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-card>
+
+  <ion-card color="primary">
+    <img src="../../assets/imagenes_grandes/Snake.png"/>
+    <ion-card-header>
+      <ion-card-title>Snake</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+      
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-button color="secondary">Buy Me</ion-button></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-card>
+
+  <ion-card color="primary">
+    <img src="../../assets/imagenes_grandes/Fish.png"/>
+    <ion-card-header>
+      <ion-card-title>Glu Glu</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+      
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-button color="secondary">Buy Me</ion-button></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-card>
+
+  <ion-card color="primary">
+    <img src="../../assets/imagenes_grandes/Spider.png"/>
+    <ion-card-header>
+      <ion-card-title>Spider-Man</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+      
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-button color="secondary">Buy Me</ion-button></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-card>
+  
+
 </ion-content>

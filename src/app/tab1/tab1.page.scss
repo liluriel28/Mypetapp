@@ -1,0 +1,20 @@
+
+.renezz{
+    border-radius: 80%;
+    height: 2.5rem;
+    width: 2.5rem;
+    
+}
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+ion-card{
+    border-radius: 5%;
+}
+
+ion-button{
+    --border-radius: 35px;
+}

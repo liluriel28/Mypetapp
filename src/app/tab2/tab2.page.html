@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 2
+      Categoria
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,106 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title>Perros</ion-card-title>
+      <ion-card-subtitle>Razas pequeñas y grandes</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <!-- Razas pequeñas -->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Chihuahua.png"/>
+          </ion-thumbnail>
+          <ion-label>Razas pequeñas</ion-label>
+        </ion-item>
+        <!-- Razas grandes -->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Pitbull.png"/>
+          </ion-thumbnail>
+          <ion-label>Razas grandes</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/perrooos.png"/>
+          </ion-thumbnail>
+          <ion-label>Razas medianas</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- ***************** -->
+  <ion-card color="primary" >
+    <ion-card-header>
+      <ion-card-title>Gatos</ion-card-title>
+      <ion-card-subtitle>Razas pequeñas y grandes</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <!-- Razas pequeñas -->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Gato.png"/>
+          </ion-thumbnail>
+          <ion-label>Razas pequeñas</ion-label>
+        </ion-item>
+        <!-- Razas grandes -->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Gatom.png"/>
+          </ion-thumbnail>
+          <ion-label>Razas grandes</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Gatu.png"/>
+          </ion-thumbnail>
+          <ion-label>Razas medianas</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- ***************** -->
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title>Serpientes</ion-card-title>
+      <ion-card-subtitle>Razas pequeñas y grandes</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <!-- Razas pequeñas -->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Serpi.png"/>
+          </ion-thumbnail>
+          <ion-label>Ptiones blancos</ion-label>
+        </ion-item>
+        <!-- Razas grandes -->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Pitu.png"/>
+          </ion-thumbnail>
+          <ion-label>Piton Bola</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="../../assets/imagenes_grandes/Casca.png"/>
+          </ion-thumbnail>
+          <ion-label>Serpiente Cascabel</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>

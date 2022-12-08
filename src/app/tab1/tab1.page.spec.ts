@@ -8,7 +8,7 @@ import { Tab1Page } from './tab1.page';
 describe('Tab1Page', () => {
   let component: Tab1Page;
   let fixture: ComponentFixture<Tab1Page>;
-
+  
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [Tab1Page],
